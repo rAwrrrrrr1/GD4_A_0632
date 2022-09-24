@@ -2,7 +2,6 @@
     // untuk ngecek tombol yang namenya 'register' sudah di pencet atau belum
     // $_POST itu method di formnya
     if (isset($_POST['register'])) {
-        // untuk mengoneksikan dengan database dengan memanggil file db.php
         include('../db.php');
         // tampung nilai yang ada di from ke variabel
         // sesuaikan variabel name yang ada di registerPage.php disetiap input
