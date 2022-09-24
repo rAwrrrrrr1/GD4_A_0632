@@ -7,6 +7,7 @@
         // sesuaikan variabel name yang ada di registerPage.php disetiap input
         $email = $_POST['email'];
         $password = $_POST['password'];
+        
         // Melakukan insert ke databse dengan query dibawah ini
         $query = mysqli_query($con, "SELECT * FROM users WHERE email = '$email'") or
             die(mysqli_error($con));
