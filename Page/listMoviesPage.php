@@ -36,8 +36,10 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 <td>' . $data['release'] . '</td>
 <td>' . $data['season'] . '</td>
 <td>
-<a href="../process/deleteMovieProcess.php?id=' . $data ['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')"> <i style="color: red" class="fa fa-trash fa-2x"></i>
-</a>
+<a href="../process/deleteMovieProcess.php?id=' . $data ['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')"> <i style="color: red" class="fa fa-trash fa-2x"></i></a>
+</td>
+<td>
+<a href="../process/editmovieProcess.php?id=' . $data ['id'] . '" onClick="return confirm ( \'Are you sure want to edit this data?\')"> <i style="color: red" class="fa fa-edit fa-2x"></i></a>
 </td>
 </tr>';
                     $no++;
